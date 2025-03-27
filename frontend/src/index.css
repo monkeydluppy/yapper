@@ -1,0 +1,29 @@
+:root {
+    --custom-background: #e2e8f0;
+    --custom-foreground: #98999b;
+}
+
+[data-theme="dark"] {
+    --custom-background: #101010;
+    --custom-foreground: #494949;
+}
+
+.icon-container {
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    transition: 0.5s background-color ease;
+}
+
+.icon-container:hover {
+    background-color: #1e1e1e;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background: var(--custom-background);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--custom-foreground);
+}
